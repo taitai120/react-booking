@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-const HotelDetail = () => {
+const Hotel = () => {
     const params = useParams();
     console.log(params);
-    return <div>HotelDetail</div>;
+    return <div>Hotel</div>;
 };
 
-export default HotelDetail;
+export default Hotel;

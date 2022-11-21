@@ -1,17 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage";
-import HotelPage from "./pages/HotelPage/HotelPage";
-import HotelDetail from "./pages/HotelDetail/HotelDetail";
+import Hotel from "./pages/Hotel/Hotel";
+import Home from "./pages/Home/Home";
+import List from "./pages/List/List";
 
 function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/hotels" element={<HotelPage />} />
-                <Route path="/hotels/:id" element={<HotelDetail />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/hotels" element={<List />} />
+                <Route path="/hotels/:id" element={<Hotel />} />
             </Routes>
         </BrowserRouter>
     );
